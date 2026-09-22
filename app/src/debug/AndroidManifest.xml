@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Debug builds only. Exported so adb can drive the persistence check
+         without touching the UI (adb has no INJECT_EVENTS on this device). -->
+    <application>
+        <activity
+            android:name="com.jev.probe.debug.PrefsPersistCheckActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+</manifest>
